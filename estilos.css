@@ -27,8 +27,8 @@ body
     float:left; /*se va a la parte lateral o la ubicacion*/
     height:1000px;
     width:300px; /*mueve el margen*/
-    /* margin-top: 18px;*/
-    margin-left: 5px;
+    margin-top: 20px;
+    margin-left: -88px;
     border: 8px solid rgb(177, 165, 32);
     text-align:center;
     display: inline;
