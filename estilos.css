@@ -1,0 +1,216 @@
+@charset "utf-8"
+{
+	margin:0px;
+	padding:0px;
+}
+body
+{
+    background-color: rgb(42, 42, 50);
+    text-align:center;
+}
+
+#encabezado1
+{
+    background-color: rgb(42, 30, 92);
+}
+#navegacion1
+{
+    background-color:rgb(42, 30, 92);
+    border: 8px solid rgb(177, 165, 32); 
+    margin-top: 10px; 
+    text-decoration: none;
+}
+
+#bloque1
+{
+    background-color:rgb(95, 80, 71);
+    float:left; /*se va a la parte lateral o la ubicacion*/
+    height:1000px;
+    width:300px; /*mueve el margen*/
+    /* margin-top: 18px;*/
+    margin-left: 5px;
+    border: 8px solid rgb(177, 165, 32);
+    text-align:center;
+    display: inline;
+}
+#seccion1
+{
+    background-color:rgb(42, 30, 92);
+     margin-left: 325px;
+     margin-right: 0px;
+     margin-top: 25px; 
+     border-radius: 20px;
+    box-shadow: 4px 4px 5px 10px rgb(177, 165, 32);
+}
+.seccion2
+{
+    padding: 5px;
+    size: 4px;
+    font-family: "Britannic Bold"; 
+    color: white;
+
+}
+#derechos1
+{
+    clear: both;
+    height:120px;
+    background-color:rgb(69, 55, 82);
+}
+.imagenlog
+{
+ width:50px;
+ height:50px;
+ float:left;
+ padding: 15px;
+}
+nav
+{
+    background-color:rgb(42, 30, 92);
+    border: 8px solid rgb(177, 165, 32); 
+    color:white;
+}
+nav ol font{
+list-style: none;
+margin-left: 50px;
+padding: 5px 0;
+float: left;
+position: relative;
+}
+nav ol font p
+{
+text-decoration: none;
+font-weight: bold;
+}
+nav ol font:hover
+{
+background-color: rgb(255, 255, 255);
+}
+nav ol font p::before
+{
+display: block;/*define que es un bloque*/
+content: "";/*modifica la parte anterior o posterior de un contenido de forma dinamica*/
+width:0%;
+background-color: rgb(177, 165, 32);
+height: 5px;
+top:0;/*desplaza un elemento con respecto a su posicion inicial*/
+position: absolute;
+/*position: absolute;*//*coloca el modo de posición absoluta*/
+}
+nav ol font p:hover::before
+{
+  width: 100%;
+   transition: all 0.25s linear;
+   transform: translate(-17%,0%);
+}
+.titulo
+{
+     background-color: rgb(177, 165, 32);
+     padding: 20px;
+}
+.titulo2
+{
+    size:2px;
+    font-family:"Britannic Bold";
+    color: white;
+}
+.padre
+{
+ display: flex;
+ box-sizing: border-box;
+ margin:15px;
+ background-color: rgb(42, 30, 92);
+ text-decoration: none;
+}
+.padre a
+{
+    /*background-color: rgb(42, 30, 92);*/
+    color:rgb(177, 165, 32);
+    text-decoration: none;/*se le quita las decoraciones de vinculo ej:"____*/
+    float:left;
+}
+.padre a:hover /*esto es con hiper vinculo con la etiqueta a*/
+{
+    background-color: rgb(255, 255, 255);
+    color:rgb(177, 165, 32);
+}
+
+.video
+{
+    border: 8px solid rgb(177, 165, 32);
+    border-radius: 20px;
+}
+.gif
+{
+    border-radius: 20px;
+    margin-right: 30px;
+    height:100px;
+}
+.gif2
+{
+     border-radius: 20px;
+    margin-right: 30px;
+    height: 150px;
+}
+.header
+{
+padding: 1px; /*espacios*/
+margin: 10px;
+}
+.buscar /*una clase llamada buscador*/
+{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 60%;
+    top:25%;
+    transform: translate(150%,-50%);
+    background: rgb(177, 165, 32);
+    padding:10px;
+    height: 20px;
+    border-radius: 40px;
+}
+
+/*.buscar_texto
+{
+    border:none;
+    background:none;
+    outline: none;
+    color:white;
+    font-size: 14px;
+    float:left;
+    line-height: 60px;
+    transition: .3s;
+    width: 0;
+}*/
+/*.boton
+{
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    color:white;
+    font-size: 30px;
+}*/
+/*@media screen and (min-width:600px){
+    .buscar:hover>.buscar_texto{
+      width:190px;
+    }
+}*/
+figure /*mueve las imagenes a la derecha*/
+{
+float: left;
+}
+figure img 
+{ 
+ box-shadow: rgb(177, 165, 32) 5px 5px 10px; 
+ border-radius: 20px; 
+ transition: all 0.5s linear;/*coloca una transición de forma que empequeña la imagen
+ /*-webkit-transition:-webkit-transform 0.9s ease-in-out 0.5s */
+ 
+} 
+
+figure img:hover/*coloca un movimiento a la imagen*/
+{/*amplia la imagen y lo mueve */
+    transform: scale(0.9);/*sirve para crear un efecto
+   /* -webkit-transform:scale(1.2);
+    -webkit-transform:rotate(2deg);*/
+}
